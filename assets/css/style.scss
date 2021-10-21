@@ -1,0 +1,125 @@
+$DarkGrey: #4b636e;
+$MediumGrey: #78909c;
+$LightGrey: #a7c0cd;
+$DarkOrange: #c66900;
+$MediumOrange: #ff9800;
+$LightOrange: $DarkOrange#ffc947;
+
+body {
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    overflow-y: scroll;
+}
+.divLeft{
+    background: linear-gradient(to right, $MediumGrey , $LightGrey);
+}
+.divRight{
+    background: linear-gradient(to left, $MediumGrey , $LightGrey);
+}
+.bgGrey{
+    background: linear-gradient($MediumGrey , $LightGrey);
+    h1{
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        color: $MediumOrange;
+        text-align: center;
+    }
+    h2{
+        font-family: 'Roboto', sans-serif;
+        color: $DarkOrange;
+        text-align: center;
+    }
+}
+.bgRow{
+    background-image: linear-gradient(to top left,
+    rgba(0, 0, 0, .2),
+    rgba(0, 0, 0, .2) 30%,
+    rgba(0, 0, 0, 0));
+}
+a{
+    text-decoration: none;
+    color: $MediumOrange;
+}
+a:hover{
+    color: $DarkGrey;
+}
+.tabM{
+    width: 100%;
+    border: 2px solid $MediumOrange;
+    color: $DarkOrange;
+    color: black;
+    th{
+        border: 2px solid $MediumOrange;
+        color: $DarkGrey;
+    } 
+    td{
+        padding-bottom: 3px;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        a{
+            color: $DarkGrey;
+        }
+        a:hover{
+            color: $DarkOrange;
+        }
+    }
+}
+
+caption {
+    display: table-caption;
+    text-align: center;
+    color: #c66900;
+    font-weight: bold;
+    caption-side: top;
+    font-size: 2rem;
+}
+.card{
+    width: 150px;
+}
+.styled{
+    border: 0;
+    line-height: 1.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(120, 144, 156, 0.7);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+.styled:hover{
+    background-color: rgba(255, 152, 0, 0.7);
+}
+.styled:active{
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+#editeur{
+    width: 150px;
+}
+
+#formInsert{
+    padding-top: 4px;
+    padding-bottom: 2px;
+    label{
+        color: $DarkGrey;
+    }
+}
+
+.page-link{
+    color:#4b636e !important;
+    background-color: #ffc947 !important;
+    border: 1px solid #c66900 !important;
+}
+
